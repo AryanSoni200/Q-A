@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#DAF3FF"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".questionActivity">
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/_0_20"
+        android:textAlignment="center"
+        android:textColor="#092242"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displayName"
+        android:layout_alignRight="@+id/displayName"
+        android:id="@+id/answerGroup"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/capriola"
+            android:text="@string/a"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/capriola"
+            android:text="@string/b"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/capriola"
+            android:text="@string/cop"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/capriola"
+            android:text="@string/d"
+            android:textColor="@color/black" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/answerGroup"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="#00BCD4"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:text="@string/next"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/button3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:text="@string/quit"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvQue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/answerGroup"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/artifika"
+        android:text="@string/question"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:text="@string/your_score"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>

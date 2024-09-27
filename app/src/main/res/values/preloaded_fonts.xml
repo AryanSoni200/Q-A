@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abril_fatface</item>
+        <item>@font/alegreya_sans_extrabold</item>
+        <item>@font/alegreya_sans_thin</item>
+        <item>@font/amaranth</item>
+        <item>@font/archivo_black</item>
+        <item>@font/artifika</item>
+        <item>@font/capriola</item>
+        <item>@font/josefin_sans_semibold</item>
+        <item>@font/play</item>
+        <item>@font/poppins_medium</item>
+    </array>
+</resources>

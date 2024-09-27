@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#10173E"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageview"
+        android:src="@drawable/boy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:id="@+id/tvRes"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/correct_answer"
+        android:layout_marginTop="180dp"
+        android:background="#76FF03"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+        android:textSize="19sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:id="@+id/tvRes2"
+        android:layout_below="@+id/tvRes"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/wrong_answer"
+        android:layout_marginTop="31dp"
+        android:background="#E1EF1010"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+        android:textSize="19sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:id="@+id/tvRes3"
+        android:layout_below="@+id/tvRes2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/final_score"
+        android:layout_marginTop="31dp"
+        android:background="#FFEB3B"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+        android:textSize="19sp"/>
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tvRes3"
+        android:layout_centerHorizontal="true">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/circulatProgressBar"
+            app:cpb_background_progressbar_color="#DC2517"
+            app:cpb_background_progressbar_width="10dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progress_max="5"
+            app:cpb_progressbar_color="#1BBD22"
+            app:cpb_progressbar_width="10dp"
+            app:cpb_round_border="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultText"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="#FFF"
+            android:textSize="19sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reStart"
+        android:layout_alignParentBottom="true"
+        android:text="@string/restart"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#00BCD4"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
